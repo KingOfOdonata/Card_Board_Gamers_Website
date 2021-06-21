@@ -1,0 +1,11 @@
+body {
+    background-image: url("../Images/cardboard-wallpaper-template.jpg");
+    background-size: 50%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
