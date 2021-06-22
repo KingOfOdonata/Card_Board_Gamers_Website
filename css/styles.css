@@ -3,7 +3,7 @@ body {
     background-size: 50%;
 }
 
-img {
+.head {
     display: block;
     margin-left: auto;
     margin-right: auto;
