@@ -1,11 +1,80 @@
 body {
     background-image: url("../Images/cardboard-wallpaper-template.jpg");
-    background-size: 50%;
+    background-size: 100% ;
+    font-size: sans-serif;
+}
+ header {
+    display: flex;
+    justify-content: center;
+ }
+.head {
+    width: 300px;
+    z-index: 1;
+  }
+
+#social_nav {    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 2;
 }
 
-.head {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+.social {
+    width: 50px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigation {
+    margin: 0;
+    padding: 0;
+}
+#navigation > li {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    background-color: #D44242;
+    border-color: #972F2F;
+    border-style: solid;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #972F2F;
+    background-size: 200%;
+}
+
+@media only screen and (min-width: 650px) {
+    .head {
+        width: 500px;
+        z-index: 1;
+      }
+    #social_nav {
+        float: right; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+    }
+    .social {
+        width: 100px;
+    }
+    #navigation {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #navigation li {
+        display: inline;
+        list-style-type: none;
+        float: left;
+        width: 200px;
+     
+      }
+
+}
