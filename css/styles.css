@@ -25,10 +25,17 @@ body {
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+.articles {
+    columns: 3;
+    color: white;
+    width: 800px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #navigation {
     margin: 0;
-    padding: 0;
 }
 #navigation > li {
     justify-content: center;
@@ -38,6 +45,10 @@ body {
     background-color: #D44242;
     border-color: #972F2F;
     border-style: solid;
+    border-width: medium;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 a {
     color: white;
@@ -51,6 +62,9 @@ a:hover {
 
 @media only screen and (min-width: 650px) {
     .head {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 500px;
         z-index: 1;
       }
@@ -68,6 +82,8 @@ a:hover {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        width: fit-content;
+        z-index: 3;
     }
     #navigation li {
         display: inline;
