@@ -134,7 +134,7 @@ a:hover {
         height: 100%;
         }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 750px) {
 .head {
     display: block;
     margin-left: auto;
