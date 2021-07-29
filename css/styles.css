@@ -8,6 +8,7 @@ body {
  header {
     display: flex;
     justify-content: center;
+    padding: 10px;
  }
 
  footer {
@@ -118,7 +119,7 @@ a:hover {
         border-width: 10px;
         border-color: white;
         border-style: solid;
-        margin-top: 7%;
+        margin-top: 23%;
         }
     
     .media-video { 
@@ -138,51 +139,19 @@ a:hover {
         height: 100%;
         }
 
- /* Read More-Less Sections */
-.read-more-state {
-    display: none;
-}
-          
-.read-more-target {
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    transition: .25s ease;
-}
-          
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-    opacity: 1;
-    font-size: inherit;
-    max-height: 999em;
-}
-          
-.read-more-state ~ .read-more-trigger:before {
-    content: 'Show more';
-}
-          
-.read-more-state:checked ~ .read-more-trigger:before {
-    content: 'Show less';
-}
-          
-.read-more-trigger {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 .5em;
-    color: white;
-    line-height: 2;
-    border: 1px solid #ddd;
-    border-radius: .25em;
-}
-/* End Read More Section */
 
+/* Larger Screen Display */
 @media only screen and (min-width: 515px) {
 .head {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
-    z-index: 1;
+    width: 50%;
+    z-index: 3;
+    position: absolute;
+    padding-top: 10px;
     }
+
 #social_nav {
     float: right; 
     display: flex;
@@ -195,15 +164,16 @@ a:hover {
 }
 #navigation {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-top: 0px;
     width: fit-content;
-    z-index: 3;
+    z-index: 1;
+    clear: right;
+    position: fixed;
 }
+
 #navigation li {
-    display: inline-block;
     list-style-type: none;
-    float: left;
     width: 200px;
     font-size: 25px;
     
