@@ -1,7 +1,10 @@
 body {
     background-image: url("../Images/cardboard-wallpaper-template.jpg");
-    background-size: 100% ;
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
+
  header {
     display: flex;
     justify-content: center;
@@ -43,9 +46,6 @@ img.social {
 .social {
     width: 50px;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 #more {display: none;}
 
@@ -72,6 +72,7 @@ body {
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 5px;
+    font-size: 20px;
 }
 a {
     color: white;
@@ -134,7 +135,44 @@ a:hover {
         height: 100%;
         }
 
-@media only screen and (min-width: 750px) {
+ /* Read More-Less Sections */
+.read-more-state {
+    display: none;
+}
+          
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+          
+          .read-more-state:checked ~ .read-more-wrap .read-more-target {
+            opacity: 1;
+            font-size: inherit;
+            max-height: 999em;
+          }
+          
+          .read-more-state ~ .read-more-trigger:before {
+            content: 'Show more';
+          }
+          
+          .read-more-state:checked ~ .read-more-trigger:before {
+            content: 'Show less';
+          }
+          
+          .read-more-trigger {
+            cursor: pointer;
+            display: inline-block;
+            padding: 0 .5em;
+            color: white;
+            line-height: 2;
+            border: 1px solid #ddd;
+            border-radius: .25em;
+          }
+/* End Read More Section */
+
+@media only screen and (min-width: 515px) {
 .head {
     display: block;
     margin-left: auto;
@@ -160,10 +198,11 @@ a:hover {
     z-index: 3;
 }
 #navigation li {
-    display: inline;
+    display: inline-block;
     list-style-type: none;
     float: left;
     width: 200px;
+    font-size: 25px;
     
 }
 .articles {
@@ -187,5 +226,6 @@ a:hover {
 iframe {
     width: 1120px;
      height: 630px;
+}   
 }
-}
+
