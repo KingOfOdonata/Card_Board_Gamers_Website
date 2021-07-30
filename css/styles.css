@@ -121,7 +121,10 @@ a:hover {
         border-style: solid;
         margin-top: 23%;
         }
-    
+
+    .topcontent {
+        margin-top: 23%;
+    }
     .media-video { 
         margin-left: 15%;
         position: relative;
@@ -147,9 +150,10 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    z-index: 3;
+    z-index: 1;
     position: absolute;
     padding-top: 10px;
+    padding-bottom: 25px;
     }
 
 #social_nav {
@@ -160,7 +164,7 @@ a:hover {
     z-index: 2;
 }
 .social {
-    width: 100px;
+    width: 80px;
 }
 #navigation {
     display: block;
@@ -169,26 +173,30 @@ a:hover {
     width: fit-content;
     z-index: 1;
     clear: right;
-    position: fixed;
+    position: absolute;
+}
+.covers {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #navigation li {
     list-style-type: none;
-    width: 200px;
-    font-size: 25px;
+    width: 150px;
+    font-size: 20px;
     
 }
 .articles {
-    display: inherit;
-    width: 900px;
-    columns: 2;
+    display: block;
+    width: 650px;
     margin-left: auto;
     margin-right: auto;
 }
 
  .contact {
     display: inherit;
-    width: 900px;
+    width: 650px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -201,7 +209,7 @@ a:hover {
 
 .short-paragraph {
     display: inherit;
-    width: 900px;
+    width: 650px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -215,3 +223,26 @@ iframe {
 }   
 }
 
+@media only screen and (min-width: 850px) {
+.articles {
+    width: 900px;
+    columns: 2;
+}
+.contact {
+    width: 900px;
+}
+.short-paragraph {
+    width: 900px;
+}
+#navigation {
+    position: fixed;
+}
+#navigation li {
+    list-style-type: none;
+    width: 200px;
+    font-size: 25px;   
+}
+.social {
+    width: 100px;
+}
+}
