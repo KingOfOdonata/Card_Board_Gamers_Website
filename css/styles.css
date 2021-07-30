@@ -70,10 +70,11 @@ img.social {
     border-color: #972F2F;
     border-style: solid;
     border-width: medium;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5px;
     font-size: 20px;
+    width: 80%;
 }
 a {
     color: white;
@@ -100,17 +101,34 @@ a:hover {
     text-align: center;
 }
     
- .short-paragraph {
-        display: block;
-           color: white;
-           background-color: #972F2F;
-           width: auto;
-           padding: 5px 50px 5px 50px;
-           margin-left: 0;
-           margin-right: 0;
-           clear: right;
-           margin-top: 3%;
-        }
+.short-paragraph {
+    display: block;
+    color: white;
+    background-color: #972F2F;
+    width: auto;
+    padding: 5px 50px 5px 50px;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
+    margin-top: 3%;
+}
+
+.title {
+    display: block;
+    color: white;
+    background-color: #D44242;
+    border-color: #972F2F;
+    border-style: solid;
+    border-width: medium;
+    width: auto;
+    padding: 5px 50px 5px 50px;
+    margin-left: 0;
+    margin-right: 0;
+    clear: right;
+    margin-top: 3%;
+    text-align: center;
+}
+
     .external-photo {
         max-width: 70%;
         display: block;
@@ -119,12 +137,8 @@ a:hover {
         border-width: 10px;
         border-color: white;
         border-style: solid;
-        margin-top: 23%;
-        }
-
-    .topcontent {
-        margin-top: 23%;
     }
+
     .media-video { 
         margin-left: 15%;
         position: relative;
@@ -144,17 +158,20 @@ a:hover {
 
 
 /* Larger Screen Display */
-@media only screen and (min-width: 515px) {
+@media only screen and (min-width: 680px) {
 .head {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
     z-index: 1;
     position: absolute;
     padding-top: 10px;
-    padding-bottom: 25px;
     }
+
+.external-photo {
+    margin-top: 25%;
+}
 
 #social_nav {
     float: right; 
@@ -193,7 +210,12 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
 }
-
+.title {
+    display: block;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
  .contact {
     display: inherit;
     width: 650px;
@@ -223,10 +245,17 @@ iframe {
 }   
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 900px) {
 .articles {
     width: 900px;
     columns: 2;
+}
+
+.title {
+    display: block;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .contact {
     width: 900px;
@@ -234,9 +263,7 @@ iframe {
 .short-paragraph {
     width: 900px;
 }
-#navigation {
-    position: fixed;
-}
+
 #navigation li {
     list-style-type: none;
     width: 200px;
@@ -245,4 +272,13 @@ iframe {
 .social {
     width: 100px;
 }
+.external-photo {
+    margin-top: 20%;
+}
+}
+
+@media only screen and (min-width: 1350px) {
+    #navigation {
+        position: fixed;
+    }
 }

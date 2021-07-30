@@ -9,6 +9,7 @@
   <meta name="author" content="Travis Schneider">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js"></script>
 
 </head>
 <div id="social_nav">
@@ -34,25 +35,26 @@
   <div class="short-paragraph">
       <h2> Have any questions about the Card Board Gamers? Curious about events or our online presence? Reach out to us using the contact form below! </h2>
     </div>
-  <div class="contact">
-    <h1>Contact Form</h1>
-    <form onsubmit="return false">
-    </form>
-    <input type="text" placeholder="Enter your last name" id="lastName" />
-<br><br>
-<input type="text" placeholder="Enter your first name" id="firstName" />
-<br><br>
-<input type="email" placeholder="Enter your email" id="email" />
-<br><br>
-<input type="checkbox" id="events" /> I want to hear about local events!
-<br><br>
-<span>What would you like to know?</span>
-<br>
-<textarea id="question" rows="4"></textarea>
-<br><br>
-<button onclick="sendContact();">Send Email!</button>
-  </div>
-</body>
+      <div class="container">
+        <form action="signup.html" method="post" id="signup">
+          <h1>Sign Up</h1>
+          <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your fullname" />
+            <small></small>
+          </div>
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email address" />
+            <small></small>
+          </div>
+          <div class="field">
+            <button type="submit" class="full">Subscribe</button>
+          </div>
+        </form>
+      </div>
+      <script src="js/scripts.js"></script>
+    </body>
 <footer>
   <div>
     Website Designed by Travis Schneider
