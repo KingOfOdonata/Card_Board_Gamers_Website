@@ -9,8 +9,6 @@
   <meta name="author" content="Travis Schneider">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/scripts.js"></script>
-
 </head>
 <div id="social_nav">
   <a href="https://www.facebook.com/groups/louisvillecardboardgamers" target="_blank"> 
@@ -32,27 +30,33 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </h1>
-  <div class="short-paragraph">
+  <div class="title">
       <h2> Have any questions about the Card Board Gamers? Curious about events or our online presence? Reach out to us using the contact form below! </h2>
     </div>
       <div class="container">
         <form action="signup.html" method="post" id="signup">
-          <h1>Sign Up</h1>
+          <div class="short-paragraph">
           <div class="field">
-            <label for="name">Name:</label>
+            <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" placeholder="Enter your fullname" />
             <small></small>
           </div>
           <div class="field">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Enter your email address" />
+            <label for="email-address">Email:</label><br>
+            <input type="text" id="email-address" name="email-address" placeholder="Enter your email address" />
             <small></small>
           </div>
           <div class="field">
-            <button type="submit" class="full">Subscribe</button>
+            <label for="comments">Questions and Comments:</label><br>
+            <textarea type="text" id="comments" rows="12" name="comments" placeholder="Type Your Questions or Comments here"></textarea>
+            <small></small>
+          </div>
+          <div class="field">
+            <input type="submit" value="Submit" id="submit-btn"/>
           </div>
         </form>
       </div>
+    </div>
       <script src="js/scripts.js"></script>
     </body>
 <footer>
