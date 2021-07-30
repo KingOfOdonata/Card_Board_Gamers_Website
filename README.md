@@ -10,7 +10,9 @@ CSS:
 *Format navigation menus
 *Add spin effect to social media icons
 *Convert text from single to double column for diffrent screen sizes
-*Change navigation placement based on screen sizes
+*Change navigation placement and size based on screen sizes
+*Alter Div widths based on screen sizes
+*Format contact form
 
 JS:
-*Allow a "Read More" option for game reviews and other long text options
+*Create a validation system for contact form

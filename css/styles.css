@@ -29,10 +29,9 @@ body {
 .head { 
     width: 300px;
     z-index: 1;
-  }
+}
 
-#more {display: none;}
-
+/* Game Images in Text Content */
 .covers {
     max-width: 450px;
     width: 90%;
@@ -87,7 +86,8 @@ a:hover {
 }
 /* End Navigation */
 
-.contact, .articles {
+/* Text Content Formatting */
+.articles {
     display: block;
     color: white;
     background-color: #972F2F;
@@ -97,10 +97,6 @@ a:hover {
     margin-right: 0;
     clear: right;
     margin-top: 2%;
-}
-
-.contact {
-    text-align: center;
 }
     
 .short-paragraph {
@@ -130,6 +126,7 @@ a:hover {
     margin-top: 3%;
     text-align: center;
 }
+/* End Text Content Formatting */
 
 .external-photo {
     max-width: 70%;
